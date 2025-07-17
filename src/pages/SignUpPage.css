@@ -1,0 +1,166 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.signup-page {
+  background: #07123a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.signup-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28%;
+  height: 28%;
+  background: rgba(255, 255, 255, 0.02);
+  clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+  transform: rotate(4deg);
+  z-index: 0;
+}
+
+.signup-page::after {
+  content: '';
+  position: absolute;
+  bottom: -4%;
+  left: -4%;
+  width: 33%;
+  height: 33%;
+  background: rgba(255, 255, 255, 0.015);
+  clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
+  transform: rotate(-7deg);
+  z-index: 0;
+}
+
+.signup-page > * {
+  position: relative;
+  z-index: 1;
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-image {
+  width: 48%;
+}
+
+.app-title {
+  color: white;
+  font-size: 8.8vh;
+  margin: 0;
+}
+
+.app-subtitle {
+  font-size: 1.6rem;
+  color: #a8abbf;
+  margin-bottom: 22px;
+}
+
+.form-box {
+  background: #fff;
+  padding: 1.9rem 2.7rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  max-width: 650px;
+  width: 100%;
+}
+
+.form-header {
+  color: #020047;
+  font-size: 2.4vh;
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+}
+
+.signup-form label {
+  margin-top: 0.45rem;
+  font-weight: 500;
+  font-size: 1.35rem;
+  letter-spacing: 0.015em;
+}
+
+.signup-form input {
+  padding: 0.45rem;
+  margin-top: 0.25rem;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid #bcc6ca;
+  font-size: 1.4rem;
+  font-family: 'Assistant';
+}
+
+.signup-form button {
+  background: #2cc4ff;
+  color: #fff;
+  font-size: 2.5rem;
+  border-radius: 14px;
+  border: none;
+  padding: 0.75rem;
+  font-family: "Assistant";
+  font-weight: bold;
+  margin-top: 1.4rem;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background: rgb(37, 175, 229);
+}
+
+.error {
+  color: red;
+  font-size: 1.4rem;
+  font-weight: 500;
+  direction: rtl;
+  text-align: center;
+  margin-top: 1.4rem;
+}
+
+.success {
+  color: green;
+  font-size: 0.88rem;
+  font-weight: 500;
+  direction: rtl;
+  text-align: center;
+  margin-top: 1.4rem;
+}
+
+.login-reminder {
+  color: #b3b6c8;
+  font-size: x-large;
+  margin-top: 33px;
+}
+
+.login-link {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.toast-popup .Toastify__toast {
+  font-family: 'Assistant';
+  font-size: 18px;
+  direction: rtl;
+  font-weight: 700;
+  text-align: center;
+  color: #061134;
+  border-radius: 12px;
+}
